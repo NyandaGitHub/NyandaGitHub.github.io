@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document</title>
+
+    <style>
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-image: url("Images/HomeWallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: cursive;
+}
+
+body, html{
+    height:100%;
+}
+
+.navbar{
+   
+    font-family:cursive;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+.navdiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    font-size: 35px;
+    font-weight:600;
+    color:white;
+}
+
+li{
+
+    list-style: none;
+    display: inline-block;
+   
+
+
+}
+li a {
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+li a:hover{
+    color: orange;
+    
+}ul li:hover a{
+    padding-right:40px;
+    color:orange;
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:cursive;
+   }
+
+   footer{
+    position:relative;
+    width:100%;
+    background:#3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+
+   }
+
+   footer .social_icon li{
+    list-style: none;
+
+   }
+
+   footer .social_icon li a{
+    font-size: 2em;
+    color:#fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+   }
+
+   footer .social_icon li a:hover{
+    transform: translateY(-10px);
+   }
+
+   footer p{
+    color:#fff;
+    text-align:center;
+
+   }
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo"><ion-icon name="book-outline"></ion-icon> CHAPTERS</div>
+      <ul id="navbar">
+        <li><a href="StartScreen.html"><ion-icon name="accessibility-outline"></ion-icon></i> Start Screen</a></li>
+        <li><a href="Home.html" style="color:aqua"><ion-icon name="home-outline"></ion-icon></i> Home</a></li>
+        <li><a href="Story.html"><ion-icon name="bookmarks-outline"></ion-icon></i> Story</a></li>
+        <li><a href="About.html"><ion-icon name="people-circle-outline"></ion-icon></i> About us</a></li>
+        <li><a href="Contact.html"><ion-icon name="person-add-outline"></ion-icon></i> Contact/Sign Up</a></li>
+        <li><a href="Submission.html"><ion-icon name="pencil-outline"></ion-icon></i> Submission</a></li>
+      </ul>
+        </div>
+        </nav>
+
+        <br>
+
+        <div>
+
+        <h1 style="text-align: center;color:white; ">Welcome to CHAPTERS dear reader!</h1>
+        <br>
+        <p style="text-align: center;color:white;">Here at CHAPTERS we have a very special mode of entertainment ready for you, and they are, interactive stories! Here at CHAPTERS we will not just let you simply read our stories but we will let you decide the narrative of those stories by presenting you with options to choose from while you are reading which can change the narrative and course of the stories completely. Whats more? You can send us your own story via the Submission page and if approved we will turn it into an interactive story and upload it to this very site for everyone to enjoy. Navigate towards the Story page to begin going on adventures you will never forget! </p>
+        <br>
+        <p style="text-align: center; color:white;">See some of the stories we have waiting for you: </p>
+
+        </div>
+
+            <br>
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="Images/LegendOfZelda.jpg" style="width:100%">
+      <div class="text">King-Slayer: Rise of The Sandman</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="Images/Siren2.jpg" style="width: 100%">
+      <div class="text">Siren</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="Images/HorrorHouse.jpg" style="width:100%">
+      <div class="text">Horror House</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="Images/Walker.jpg" style="width:100%">
+        <div class="text">The Walkers</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="Images/AnimeGirl2.jpg" style="width:100%">
+        <div class="text">Isn't The Moon Lovely</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <p style="color:red;">(Click play on the audio controls below to listen to some music while you take everything in)</p>
+  <audio controls autoplay style="padding-left: 200px;"> 
+    <source src="Music/Overcome.mp3" type="audio/mpeg">
+  </audio>
+  
+
+
+
+
+  <footer>
+     
+    <ul class="social_icon">
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+
+    </ul>
+    <p>&copy;Chapters 2023 | All Rights Reserved</p>
+</footer>
+<script src="Java.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

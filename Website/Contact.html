@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body {
+    font-family:cursive;
+    background-image: url("Images/Contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   height:100%;
+    font-family: cursive;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+
+}
+
+body, html{
+    height:100%;
+}
+
+.navbar{
+   
+   font-family:cursive;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+ 
+.navdiv{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+
+.logo {
+   font-size: 35px;
+   font-weight:600;
+   color:white;
+}
+
+li{
+
+   list-style: none;
+   display: inline-block;
+  
+
+
+}
+li a {
+   color:white;
+   font-size: 18px;
+   font-weight: bold;
+   margin-right: 25px;
+   text-decoration: none;
+   transition: .4s;
+}
+
+li a:hover{
+   color: orange;
+   
+}ul li:hover a{
+   padding-right:40px;
+   color:orange;
+   
+}
+
+.signup-box {
+    width:360px;
+    height:620px;
+    margin:auto;
+    background-color: burlywood;
+    border-radius: 50px;
+}
+
+h1 {
+    text-align: center;
+
+}
+h4 {
+    text-align: center;
+}
+
+form {
+    width:300px;
+    margin-left:20px;
+}
+
+form label{
+    display:flex;
+    margin-top: 20px;
+    font-size:18px;
+}
+
+form input {
+    width:100%;
+    padding:7px;
+    border:none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline:none;
+
+}
+
+#button
+{
+    width:320px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color: #49c1a2;
+    color:white;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#container{
+    display:flex;
+    column-gap: 40px;
+}
+
+#box-1{
+
+   
+    padding-left: 100px;
+
+
+}
+
+#box-2{
+    margin-left: 400px;
+    height:550px;
+    width:900px;
+    justify-content: center;
+    background-color: burlywood;
+    border-radius: 50px;
+   }
+
+   *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:cursive;
+   }
+
+   footer{
+    position:relative;
+    width:100%;
+    background:#3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+
+   }
+
+   footer .social_icon li{
+    list-style: none;
+
+   }
+
+   footer .social_icon li a{
+    font-size: 2em;
+    color:#fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+   }
+
+   footer .social_icon li a:hover{
+    transform: translateY(-10px);
+   }
+
+   footer p{
+    color:#fff;
+    text-align:center;
+
+   }
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo"><ion-icon name="book-outline"></ion-icon> CHAPTERS</div>
+      <ul id="navbar">
+        <li><a href="StartScreen.html"><ion-icon name="accessibility-outline"></ion-icon></i> Start Screen</a></li>
+        <li><a href="Home.html"><ion-icon name="home-outline"></ion-icon></i> Home</a></li>
+        <li><a href="Story.html"><ion-icon name="bookmarks-outline"></ion-icon></i> Story</a></li>
+        <li><a href="About.html"><ion-icon name="people-circle-outline"></ion-icon></i> About us</a></li>
+        <li><a href="Contact.html" style="color:aqua"><ion-icon name="person-add-outline"></ion-icon></i> Contact/Sign Up</a></li>
+        <li><a href="Submission.html"><ion-icon name="pencil-outline"></ion-icon></i> Submission</a></li>
+      </ul>
+        </div>
+        </nav>
+
+        <h1 style="text-align: left; padding-left: 100px; color:white;">Sign up below!</h1>
+
+<div id="container">
+
+        <div id="box-1">
+        <div class="signup-box">
+
+            <h1>Sign Up</h1>
+            <h4>(It's free and only takes a minute)</h4>
+            <form action="#">
+                
+                <label>First Name:</label>
+                <input type="text" placeholder="">
+                <label>Last Name:</label>
+                <input type="email" placeholder="">
+                <label>Email: </label>
+                <input type="password" placeholder="">
+                <label>Password:</label>
+                <input type="password" placeholder="">
+                
+                <input type="button" id="button" value="Submit" style="background-color: #49c1a2;">
+            </form>
+            <p>By clicking the Sign Up button you agree to our <a href="#">Terms and Conditions</a> and <a href="">Policies.</a></p>
+            <p>Already have an account? <a href="Login.html">Login here</a></p>
+        </div>
+        </div>
+
+        <div id="box-2">
+
+            <h1>Contact Us:</h1>
+            <p >Author Instagram page: <a href="">CHAPTERS_AUTHOR</a></p>
+                <p>Writing Team Instagram page: <a href="">CHAPTERS_TEAM</a></p>
+                <p>Our Facebook page: <a href="">CHAPTERS_FACEBOOK</a></p>
+                <p>Our Snapchat: <a href="">SNAP_CHAP</a></p>
+                <p>Our TikTok page: <a href="">CHAPTERS_TIKTOK</a></p>
+                <p>Twitter: <a href="">CHAPTERS_TWEET</a></p>
+                <p>Our email: Chapters3456@gmail.com</p>
+                <p>Tel: +27 89 456 7869</p>
+                <p>Office Address: Pretoria East, 58 Shepherd Road</p>
+                <p style="color:red;">For any queries or issues you may have please make use of our email. (preferably)</p>
+
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+     
+        <ul class="social_icon">
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+
+        </ul>
+        <p>&copy;Chapters 2023 | All Rights Reserved</p>
+    </footer>
+ 
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

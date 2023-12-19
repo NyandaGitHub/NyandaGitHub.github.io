@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+    font-family:cursive;
+    background-image: url("Images/Submission.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   height:100%;
+    font-family: cursive;
+
+
+}
+
+
+.navbar{
+   
+   font-family:cursive;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+ 
+.navdiv{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+
+.logo {
+   font-size: 35px;
+   font-weight:600;
+   color:white;
+}
+
+li{
+
+   list-style: none;
+   display: inline-block;
+  
+
+
+}
+li a {
+   color:white;
+   font-size: 18px;
+   font-weight: bold;
+   margin-right: 25px;
+   text-decoration: none;
+   transition: .4s;
+}
+
+li a:hover{
+   color: orange;
+   
+}
+ul li:hover a{
+   padding-right:40px;
+   color:orange;
+   
+}
+
+.signup-box {
+    width:660px;
+    height:630px;
+    margin:auto;
+    background-color: burlywood;
+    border-radius: 50px;
+}
+
+h1 {
+    text-align: center;
+
+}
+h4 {
+    text-align: center;
+}
+
+form {
+    width:300px;
+    margin-left:20px;
+}
+
+form label{
+    display:flex;
+    margin-top: 20px;
+    font-size:18px;
+}
+
+form input {
+    width:100%;
+    padding:7px;
+    border:none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline:none;
+
+}
+
+#button
+{
+    width:320px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color: #49c1a2;
+    color:white;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#container{
+    display:flex;
+    column-gap: 40px;
+}
+
+#box-1{
+
+   
+    padding-left: 100px;
+
+
+}
+
+#genre {
+    border-radius: 10px;
+}
+
+#text-area {
+    border-radius: 12px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:cursive;
+   }
+
+   footer{
+    position:relative;
+    width:100%;
+    background:#3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+
+   }
+
+   footer .social_icon li{
+    list-style: none;
+
+   }
+
+   footer .social_icon li a{
+    font-size: 2em;
+    color:#fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+   }
+
+   footer .social_icon li a:hover{
+    transform: translateY(-10px);
+   }
+
+   footer p{
+    color:#fff;
+    text-align:center;
+
+   }
+
+    </style>
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo"><ion-icon name="book-outline"></ion-icon> CHAPTERS</div>
+      <ul id="navbar">
+        <li><a href="StartScreen.html"><ion-icon name="accessibility-outline"></ion-icon></i> Start Screen</a></li>
+        <li><a href="Home.html"><ion-icon name="home-outline"></ion-icon></i> Home</a></li>
+        <li><a href="Story.html"><ion-icon name="bookmarks-outline"></ion-icon></i> Story</a></li>
+        <li><a href="About.html"><ion-icon name="people-circle-outline"></ion-icon></i> About us</a></li>
+        <li><a href="Contact.html"><ion-icon name="person-add-outline"></ion-icon></i> Contact/Sign Up</a></li>
+        <li><a href="Submission.html" style="color:aqua"><ion-icon name="pencil-outline"></ion-icon></i> Submission</a></li>
+      </ul>
+        </div>
+        </nav>
+
+    <div style="color:white; text-align: center;">
+    <h1>Submit your own story!</h1>
+    <p>Welcome to the Story Submission page. Below you will find a form you need to fill in if you wish to send us your own interactive story that you would like to see published on this website. Please remember that submitting a story doesn't guarantee that we will publish it. We will notify you via email if your story was accepted or not. When typing your story down below on the form please remember to stick to the community guidelines we specified on our <a href="#">Terms and Conditions</a> page as well as our <a href="#"> policies</a> page. Good luck and have fun writing!</p>
+   </div>
+
+   <div id="box-1">
+    <div class="signup-box">
+
+        <h1>Write your story:</h1>
+        <h4></h4>
+        <form action="#">
+            
+            <label>Story Title:</label>
+            <input type="text" placeholder="">
+            <label>Genre:</label>
+            <select name="genre" id="genre">
+                <option value="action">Action</option>
+                <option value="fantasy">Fantsay</option>
+                <option value="adventure">Adventure</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="drama">Drama</option>
+                <option value="Historical">Historical</option>
+                <option value="suspense/thriller">Suspense/Thriller</option>
+                <option value="comedy">Comedy</option>
+                <option value="slice of life">Slice of Life</option>
+                <option value="supernatural">Supernatural</option>
+                <option value="coming of age">Coming of Age</option>
+                <option value="kids">Kids</option>
+                <option value="other">Other(specify below)</option>
+              </select>
+            <label>Plot:</label>
+            <textarea name="" id="text-area" cols="77" rows="15">Please describe the plot and characters of your story as best as possible...</textarea>
+            
+            <input type="button" id="button" value="Submit" style="background-color: #49c1a2;">
+        </form>
+        <p style="color:red;"><i>Remember to adhere to the community guidelines when writing your story.</i></p>
+    </div>
+    </div>
+
+
+    <footer>
+     
+        <ul class="social_icon">
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+
+        </ul>
+        <p>&copy;Chapters 2023 | All Rights Reserved</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
